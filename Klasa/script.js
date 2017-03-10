@@ -6,7 +6,9 @@ function MobilePhone(brand, price, color, year) {
 	this.rokProdukcji = year;
 }
 MobilePhone.prototype.showInfo = function() {
-
+		document.write("Marka telefonu to " + this.markaTelefonu + ", kolor to " + 
+		this.kolorTelefonu + ", a cena to " + this.cenaTelefonu + " zl." + 
+		" rok produkcji - " + this.rokProdukcji + "<br>");
 		console.log("Marka telefonu to " + this.markaTelefonu + ", kolor to " + 
 		this.kolorTelefonu + ", a cena to " + this.cenaTelefonu + " zl." + 
 		" rok produkcji - " + this.rokProdukcji);
