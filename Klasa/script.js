@@ -1,4 +1,4 @@
-//OOP Prototype
+/*OOP Prototype*/
 function MobilePhone(brand, price, color, year) {
 	this.markaTelefonu = brand;
 	this.cenaTelefonu = price;
