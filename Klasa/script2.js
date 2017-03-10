@@ -1,4 +1,4 @@
-//OOP Method inside class
+/*OOP Method inside class*/
 function MobilePhone(brand, price, color) {
 	this.markaTelefonu = brand;
 	this.cenaTelefonu = price;
