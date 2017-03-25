@@ -1,55 +1,95 @@
 /*Css*/
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	background-image: url('../img/trello.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: monospace;
+}
+
+h1 {
+	font-size: 40px;
+	color: #15362D;
+	margin-top: 0;
+}
+
+button {
+	background: lightgreen;
+	border: 3px solid  #15362D;
+	color:  #15362D;
+	padding: 15px 30px;
+	margin: 5px 5px 25px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	transition: .5s;
+}
+
+button:hover {
+	color: green;
+	cursor: pointer;
+	border-color: green;
+	transform: scale(0.98,0.98);
+}
+
 ul {
 	list-style-type: none;
-	margin: 0 50px 0 0;
-	padding: 15px 0;
-	border: 1px solid #000;
+	margin: 0;
+	padding: 0;
 }
 
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 100;
-	padding-top: 100px;
-	top: 0;
-	width:100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, .5);
-}
-
-.modal-content {
-	background-color: #fefefe;
-	margin: 0 auto;
-	padding: 20px;
-	border: 1px solid #000;
-	width: 50%;
-}
-
-.close {
-	float: right;
-	font-weight: bold;
-	font-size: 36px;
-}
-
-.close:hover {
-	color: red;
-	cursor: pointer;
-}
-
-input {
-	display: block;
-	margin: 0 auto;
-	padding: 10px 20px;
-	border: 3px solid blue;
-}
-
-#btnOk {
-	background: lightgreen;
-	border: 2px solid: #000;
-	box-shadow: none;
-	width: 50px;
-	color: #fff;
+.btn-delete {
+	background: red;
+	color: white;
+	font-size: 20px;
 	padding: 0 5px;
+	border: 1px solid #000;
 }
 
+.columns {
+	background: #15362D;
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+	color: lightgreen;
+}
+
+.card {
+	background: #D08FD9;
+	color: #15362D;
+}
+.card p {
+	padding: 10px 0;
+	font-size: 16px;
+}
+
+button.add-card {
+	background: none;
+	border: 3px solid lightgreen;
+	color: lightgreen;
+}
+
+/*MEDIA QUERY*/
+
+@media(max-width: 660px) {
+	.columns {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+}

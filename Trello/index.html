@@ -1,25 +1,24 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
     <title>Tablica kanban</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcin">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-	<div id="board" class="board">
-	  <h1>Tablica kanban</h1>
-	  <button class="create-column open-modal">Dodaj kolumnę</button>
-	  <div class="column-container"></div>
-	</div>
-	<!--Modal-->
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<input id="get-value" type="text" name="description" value="" placeholder="Wpisz nazwę kolumny">
-			<button id="btnOk">OK</button>
+	<section class="background">
+		<div class="container">
+			<div id="board">
+			 	<h1>Tablica kanban</h1>
+			  	<button class="create-column">Dodaj kolumnę</button>
+			  	<div class="column-container"></div>
+			</div>
 		</div>
-	</div>
-
+	</section>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
