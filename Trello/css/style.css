@@ -63,10 +63,11 @@ ul {
 
 .columns {
 	background: #15362D;
-	width: 33.33%;
+	width: 30.993%;
 	float: left;
 	padding: 10px;
 	color: lightgreen;
+	margin: 1%;
 }
 
 .card {
