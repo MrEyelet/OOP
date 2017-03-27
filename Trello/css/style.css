@@ -7,10 +7,18 @@ body {
 	padding: 0;
 }
 
+.clearfix::before,
+.clearfix::after {
+	content: " ",
+	display: table,
+	clear: both,
+}
+
 .background {
 	background-image: url('../img/trello.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat-y;
 	height: 100vh;
 }
 
@@ -69,6 +77,10 @@ ul {
 	padding: 10px;
 	color: lightgreen;
 	margin: 1%;
+}
+
+.columns:nth-child(4n) {
+	clear: both;
 }
 
 .card {
