@@ -24,8 +24,9 @@ $(function(){
 			var $column = $('<div>').addClass('columns');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
 			var $columnCardList = $('<ul>').addClass('column-card-list');
-			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
 			var $columnAddCard = $('<button>').addClass('add-card').text('Dodaj kartę');
+			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
+			
 
 			//Podpinanie odpowiednich zdarzeń
 			$columnDelete.click(function() {//kasowanie kolumny po kliknięciu w przycisk
@@ -38,8 +39,8 @@ $(function(){
 
 			//konstruowanie elementu kolumny
 			$column.append($columnTitle)
-					.append($columnDelete)
 					.append($columnAddCard)
+					.append($columnDelete)
 					.append($columnCardList);
 			return $column;//zwracanie stworzonej kolumny
 		}
