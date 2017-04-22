@@ -2,6 +2,7 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -15,19 +16,19 @@ body {
 }
 
 .background {
-	background-image: url('../img/trello.jpg');
-	background-size: cover;
-	background-position: center;
-	min-height: 100%;
+    background-image: url(../img/trello.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 .layer {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .container {
@@ -40,12 +41,12 @@ body {
 
 h1 {
 	font-size: 40px;
-	color: lightgreen;
-	margin-top: 0;
+	color: #8FC0A9;
+	margin-top: 15px;
 }
 
 button {
-	background: lightgreen;
+	background: #8FC0A9;
 	border: 3px solid  #15362D;
 	color:  #15362D;
 	padding: 15px 30px;
@@ -57,9 +58,7 @@ button {
 }
 
 button:hover {
-	color: green;
 	cursor: pointer;
-	border-color: green;
 	transform: scale(0.98,0.98);
 }
 
@@ -67,7 +66,7 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	min-height: 300px;
+	min-height: 100px;
 }
 
 .btn-delete {
@@ -86,14 +85,24 @@ ul {
 	width: 30.993%;
 	float: left;
 	padding: 10px;
-	color: lightgreen;
+	color:  #8FC0A9;
 	margin: 1%;
 	position: relative;
-	min-height: 500px;
+	min-height: 300px;
+	box-shadow: 5px 5px 25px #000;
+}
+
+.columns h2 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #FAF3DD;
+}
+
+.columns:nth-of-type(3n+1) {/*3n --> co trzeca kolumna poczynając od pierwzego rzędu --> +1*/
+	clear: both;
 }
 
 .card {
-	background: #D08FD9;
+	background: #FAF3DD;
 	color: #15362D;
 	overflow-wrap: break-word;
 	padding: 0 40px;
@@ -107,9 +116,9 @@ ul {
 
 button.add-card {
 	background: none;
-	border: 3px solid lightgreen;
-	color: lightgreen;
-	margin: 0;
+	border: 3px solid #FAF3DD;
+	color:  #FAF3DD;
+	margin: 0 0 25px 0;
 }
 
 /*MEDIA QUERY*/
